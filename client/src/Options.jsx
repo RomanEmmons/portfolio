@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Options = (props) => {
-  let pages = ['About', 'Portfolio', 'Contact'];
+  let pages = ['about', 'portfolio', 'contact'];
   return (
     <div className="btn-container">
       {pages.map((page, i) => {
@@ -10,7 +10,7 @@ const Options = (props) => {
             onClick={() => {
               props.selectPage(page);
             }}
-            className="btn third"
+            className="btn btn-animations"
             key={i}
           >
             {page}
