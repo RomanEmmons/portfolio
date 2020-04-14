@@ -1,7 +1,19 @@
 /* FONT LOAD */
 @font-face {
   font-family: 'ultra';
-  src: url('Ultra.otf');
+  src: url('./fonts/Ultra.otf');
+}
+@font-face {
+  font-family: 'stellar';
+  src: url('./fonts/Stellar-Light.otf');
+}
+@font-face {
+  font-family: 'media1';
+  src: url('./fonts/Socialico-Regular.otf');
+}
+@font-face {
+  font-family: 'media2';
+  src: url('./fonts/SocialicoPlus-Plus.otf');
 }
 
 /* BODY */
@@ -40,8 +52,10 @@ body {
 }
 .btn:hover,
 .btn:focus {
-  color: #fff;
-  outline: 0;
+  color: purple;
+  outline: 1%;
+  outline-color: purple;
+  outline-style: initial;
 }
 
 .btn-animations:hover {
@@ -50,6 +64,7 @@ body {
   box-shadow: 0 0 40px 40px purple inset, 0 0 0 0 purple;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  cursor: pointer;
 }
 .btn-animations {
   box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
@@ -70,41 +85,126 @@ body {
   }
 }
 
-@media (max-width: 767pxl) {
-  #background {
-    display: none;
-  }
-  body {
-    background-image: url('still.png');
-    background-size: cover;
-  }
-}
-
 /* DISPLAY */
 .display {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
-  margin-left: 25%;
-  height: 50%;
-  width: 50%;
-  background: black;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* IMAGE CAROUSEL */
+/* DESCRIPTION */
+.aboutDescription {
+  display: block;
+  float: left;
+  width: 60%;
+  height: auto;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  margin-bottom: 1.5%;
+}
+
+/* CONTACT */
+form {
+  max-width: 50%;
+  margin: 2% auto auto auto;
+}
+
+.feedback-input {
+  color: purple;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+  font-family: 'stellar', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  line-height: 3vw;
+  background-color: black;
+  border: 2px solid purple;
+  transition: all 0.3s;
+  padding: 2%;
+  margin: 2%;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+textarea {
+  height: 150%;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type='submit'] {
+  font-family: 'stellar', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: black;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: purple;
+  font-size: 1.75vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: all 0.3s;
+  margin-top: 1%;
+  margin-left: 2%;
+
+  font-weight: 700;
+}
+[type='submit']:hover {
+  background: purple;
+  color: black;
+}
+
+::placeholder {
+  color: purple;
+}
 
 /* ABOUT */
-.about {
-  color: purple;
-  height: 20%;
-  width: 30%;
+
+.contactLink {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-/* IMAGES */
-img {
-  height: 5vw;
-  width: auto;
+.about {
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+  background: black;
+  display: inline-block;
+  color: purple;
+  height: auto;
+  width: 80%;
+  margin: 5% 11% 11% 11%;
+}
+
+.headShot {
+  float: right;
+  height: 25vw;
+  width: 25vw;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+
+/* ICONS */
+.icon-container {
+  text-align: center;
+  float: left;
+  color: purple;
+  position: fixed;
+  margin: 4.25% 0 0 1%;
+}
+
+.icons1 {
+  font-family: 'media1';
+  font-size: 3vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icons2 {
+  font-family: 'media2';
+  font-size: 3vw;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* BANNER */
@@ -112,6 +212,11 @@ img {
   background-color: black;
   margin-top: -4%;
   padding-bottom: 2%;
+  z-index: -0.05;
+}
+
+.options {
+  margin-top: 5%;
 }
 
 /* TEXT */
@@ -121,16 +226,16 @@ h1 {
   font-size: 6vw;
   text-align: center;
   font-weight: 700;
-  margin-top: -0.1em;
+  margin-top: 0.5%;
   margin-left: 7%;
-  margin-bottom: auto;
+  margin-bottom: 1.5%;
   padding-top: 3%;
 }
 
 h2 {
   color: purple;
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
   font-family: 'ultra';
   font-style: normal;
   font-variant: normal;
@@ -138,10 +243,10 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
   color: purple;
-  font-family: 'ultra';
-  font-size: 3vw;
+  font-family: 'stellar';
+  font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -160,14 +265,63 @@ h4 {
 
 p {
   color: purple;
-  font-family: 'ultra';
-  font-size: 2vw;
+  font-family: 'stellar';
+  font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
 }
+a {
+  color: purple;
+  font-family: 'stellar';
+  font-size: 1.5vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  margin: auto;
+}
 
-/* CAROUSEL */
+/* PORTFOLIO */
+
+.projects {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 85%;
+}
+
+.portfolio {
+  display: block;
+}
+
+.innerPort {
+  display: inline-flex;
+}
+
+.portOuter {
+  /* box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple; */
+}
+
+.titleImage {
+  display: block;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+  margin: 2% 2% 2% 1.5%;
+  height: auto;
+  width: auto;
+}
+
+.facts {
+  display: block;
+  text-align: left;
+  margin: -2% 2.5% 0 1%;
+  width: 38%;
+}
+
+.portfolioImage {
+  width: 50%;
+  height: auto;
+  margin: 0 2.5% 3% 4%;
+}
 
 /********************************************
 	BREAKPOINT WIDTHS
@@ -209,7 +363,7 @@ p {
 }
 .carousel .control-disabled.control-arrow {
   opacity: 0;
-  filter: alpha(opacity=0);
+  filter: alpha(opacity=1);
   cursor: inherit;
   display: none;
 }
@@ -217,18 +371,19 @@ p {
   left: 0;
 }
 .carousel .control-prev.control-arrow:before {
-  border-right: 8px solid #fff;
+  border-right: 1vw solid purple;
 }
 .carousel .control-next.control-arrow {
   right: 0;
 }
 .carousel .control-next.control-arrow:before {
-  border-left: 8px solid #fff;
+  border-left: 1vw solid purple;
 }
 
 .carousel {
   position: relative;
   width: 100%;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
 }
 .carousel * {
   -webkit-box-sizing: border-box;
@@ -250,6 +405,7 @@ p {
   top: 50%;
   margin-top: -13px;
   font-size: 18px;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
 }
 .carousel .thumbs-wrapper {
   margin: 20px;
@@ -302,7 +458,7 @@ p {
 }
 .carousel.carousel-slider .control-arrow {
   top: 0;
-  color: #fff;
+  color: purple;
   font-size: 26px;
   bottom: 0;
   margin-top: 0;
@@ -392,7 +548,7 @@ p {
   width: 90%;
   border-radius: 10px;
   background: #000;
-  color: #fff;
+  color: purple;
   padding: 10px;
   font-size: 12px;
   text-align: center;
@@ -424,7 +580,7 @@ p {
   opacity: 0.3;
   filter: alpha(opacity=30);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-  background: #fff;
+  background: purple;
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -442,9 +598,10 @@ p {
   top: 0;
   right: 0;
   padding: 5px;
-  font-size: 10px;
+  font-size: 0.75vw;
+  margin-left: 5%;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
-  color: #fff;
+  color: purple;
 }
 .carousel:hover .slide .legend {
   opacity: 1;
