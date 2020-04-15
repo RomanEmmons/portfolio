@@ -15,7 +15,7 @@ const rsvp = {
   title: 'RSVP-Up',
   image: rsvpgif,
   description:
-    'This is a MeetUp clone that I created with an AGILE team of 4 other engineers.  I had a lot of fun scaling this app and load testing it with Artillery JS and New Relic.  It implements Redis data caching in order to benchmark at 10k rps with an average latency of 150ms while querying a database of over 35 million records!',
+    'This is a MeetUp clone that I created with an AGILE team of 4 other engineers.  I had a lot of fun scaling this app and load testing it with Artillery JS and New Relic.  It implements Redis data caching to benchmark at 10k rps with an average latency of 150ms while querying a database of over 35 million records!',
   stack: 'React, Node, Express, MySQL',
   github: 'https://github.com/RSVP-Up',
 };
