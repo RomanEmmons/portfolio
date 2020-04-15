@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 'landing',
+      page: 'breakout',
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -79,7 +79,7 @@ class App extends React.Component {
             <About selectPage={this.selectPage} />
           </div>
         ) : null}
-        {this.state.page === 'landing' ? <Page /> : null}
+        {this.state.page === 'breakout' ? <Page /> : null}
         {this.state.page === 'portfolio' ? (
           <Portfolio applications={this.state.applications} />
         ) : null}

@@ -1,4 +1,4 @@
-import { getRange } from '../utils';
+import { getRange } from '../utils.js';
 
 export const BLOCK_MAX_DENSITY = 3;
 
