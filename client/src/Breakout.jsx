@@ -1,7 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 
-const gameWidth = 300;
+const gameWidth = 400;
 const gameHeight = 400;
 const colors = [
   '#9370DB',

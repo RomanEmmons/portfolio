@@ -34,14 +34,10 @@ body {
 
 /* BREAKOUT */
 
-.breakout {
-  margin: 10%;
-}
-
 canvas {
   padding: 0;
   font-family: 'ultra';
-  margin: auto;
+  margin: 3% auto;
   display: block;
   box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
 }
@@ -104,15 +100,15 @@ canvas {
   }
 }
 
-/* @media (max-width: 767pxl) {
+@media (max-width: 767pxl) {
   #background {
     display: none;
   }
   body {
-    background-image: url('./images/still.png');
+    background-image: url('./still.png');
     background-size: cover;
   }
-} */
+}
 
 /* DISPLAY */
 .display {
@@ -316,6 +312,7 @@ a {
 /* PORTFOLIO */
 
 .projects {
+  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -337,7 +334,7 @@ a {
 .titleImage {
   display: block;
   box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
-  margin: 2% 2% 2% 1.5%;
+  margin: 3% 2% 2% 1.5%;
   height: auto;
   width: auto;
 }
