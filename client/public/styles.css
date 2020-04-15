@@ -34,18 +34,22 @@ body {
 
 /* BREAKOUT */
 
-.page {
-  width: auto;
-  height: auto;
-  background: #2c3e50;
-  padding: 60px;
+.breakout {
   margin: 10%;
+}
+
+canvas {
+  padding: 0;
+  font-family: 'ultra';
+  margin: auto;
+  display: block;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
 }
 
 /* OPTIONS */
 .btn-container {
   display: inline-flex;
-  margin-left: 34%;
+  margin-left: 28%;
   margin-top: -10%;
 }
 
@@ -133,7 +137,7 @@ body {
 /* CONTACT */
 form {
   max-width: 50%;
-  margin: 2% auto auto auto;
+  margin: 0.5% auto auto auto;
 }
 
 .feedback-input {
@@ -297,7 +301,7 @@ p {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: 500;
 }
 a {
   color: purple;
@@ -305,7 +309,7 @@ a {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 700;
   margin: auto;
 }
 
