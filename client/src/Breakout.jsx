@@ -172,26 +172,26 @@ export default class Breakout extends React.Component {
       ctx.fillRect(paddle1.x, paddle1.y, paddle1.w, paddle1.h);
 
       if (ballOn === false) {
-        ctx.font = '1.5vw stellar';
+        ctx.font = '18px stellar';
         ctx.textAlign = 'center';
         ctx.fillText(
           'Press spacebar to start a new game.',
           Width / 2,
           Height / 2 - 25
         );
-        ctx.font = '1.5vw stellar';
+        ctx.font = '18px stellar';
         ctx.fillText(
           'Move with arrow keys or A & D.',
           Width / 2,
           Height / 2 + 25
         );
         if (gameOver === 1) {
-          ctx.font = '2.5vw stellar';
-          ctx.fillText('HIRE ME!', Width / 2, Height / 2 - 50);
+          ctx.font = '36px stellar';
+          ctx.fillText('HIRE ME FOR THE WIN!', Width / 2, Height / 2 - 50);
         } else if (gameOver === 2) {
-          ctx.font = '2vw stellar';
+          ctx.font = '30px stellar';
           ctx.fillText('YOU WON!', Width / 2, Height / 2 - 90);
-          ctx.font = '2vw stellar';
+          ctx.font = '30px stellar';
           ctx.fillText('Congratulations!', Width / 2, Height / 2 - 50);
         }
       }
