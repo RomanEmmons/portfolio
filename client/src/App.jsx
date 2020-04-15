@@ -5,6 +5,7 @@ import Options from './Options.jsx';
 import About from './About.jsx';
 import Portfolio from './Portfolio.jsx';
 import Contact from './Contact.jsx';
+import Page from './Page.jsx';
 import { chonky, rsvp, stock } from '../../portfolioData/portfolio.js';
 
 class App extends React.Component {
@@ -75,20 +76,15 @@ class App extends React.Component {
         </div>
         {this.state.page === 'about' ? (
           <div>
-            <About selectPage={this.selectPage} page={this.state.page} />
+            <About selectPage={this.selectPage} />
           </div>
         ) : null}
-
+        {this.state.page === 'landing' ? <Page /> : null}
         {this.state.page === 'portfolio' ? (
-          <Portfolio
-            page={this.state.page}
-            applications={this.state.applications}
-          />
+          <Portfolio applications={this.state.applications} />
         ) : null}
-        {this.state.page === 'contact' ? (
-          <Contact page={this.state.page} />
-        ) : null}
-        {this.state.page === 'game' ? <Game page={this.state.page} /> : null}
+        {this.state.page === 'contact' ? <Contact /> : null}
+        {this.state.page === 'game' ? <Game /> : null}
       </div>
     );
   }
