@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'stellar';
-  src: url('./fonts/Stellar-Bold.otf');
+  src: url('./fonts/Stellar-light.otf');
 }
 @font-face {
   font-family: 'media1';
@@ -290,7 +290,7 @@ p {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 a {
   color: purple;
@@ -298,7 +298,7 @@ a {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin: auto;
 }
 
