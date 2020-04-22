@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'stellar';
-  src: url('./fonts/Stellar-Light.otf');
+  src: url('./fonts/Stellar-Bold.otf');
 }
 @font-face {
   font-family: 'media1';
@@ -226,6 +226,7 @@ textarea {
   font-size: 3vw;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 400;
 }
 
 .icons2 {
@@ -233,6 +234,7 @@ textarea {
   font-size: 3vw;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 400;
 }
 
 /* BANNER */
@@ -329,6 +331,8 @@ a {
 
 .portOuter {
   /* box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple; */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .titleImage {
