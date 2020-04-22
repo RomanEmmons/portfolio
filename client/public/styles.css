@@ -110,26 +110,6 @@ canvas {
   }
 }
 
-/* DISPLAY */
-.display {
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* DESCRIPTION */
-.aboutDescription {
-  font-family: 'stellar', Arial, Helvetica;
-  display: block;
-  float: left;
-  width: 60%;
-  height: auto;
-  margin-top: 1.5%;
-  margin-left: 5%;
-  margin-bottom: 1.5%;
-}
-
 /* CONTACT */
 form {
   max-width: 50%;
@@ -188,6 +168,17 @@ textarea {
 
 /* ABOUT */
 
+.aboutDescription {
+  font-family: 'stellar', Arial, Helvetica;
+  display: block;
+  float: left;
+  width: 60%;
+  height: auto;
+  margin-top: 1.5%;
+  margin-left: 5%;
+  margin-bottom: 1.5%;
+}
+
 .contactLink {
   text-decoration: underline;
   cursor: pointer;
@@ -206,7 +197,7 @@ textarea {
 }
 
 .headShot {
-  float: right;
+  margin: 15%;
   height: 25vw;
   width: 25vw;
   box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
@@ -299,7 +290,7 @@ p {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 500;
+  font-weight: 300;
 }
 a {
   color: purple;
@@ -307,7 +298,7 @@ a {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: 300;
   margin: auto;
 }
 

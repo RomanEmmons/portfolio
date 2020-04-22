@@ -4,10 +4,10 @@ import $ from 'jquery';
 import Options from './Options.jsx';
 import About from './About.jsx';
 import Portfolio from './Portfolio.jsx';
+import Headshot from './Headshot.jsx';
 import Contact from './Contact.jsx';
 import Breakout from './Breakout.jsx';
 import Icons from './Icons.jsx';
-import { chonky, rsvp, stock, repo } from '../../portfolioData/portfolio.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -15,16 +15,9 @@ class App extends React.Component {
     this.state = {
       page: 'breakout',
     };
-    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.selectPage = this.selectPage.bind(this);
   }
-
-  componentDidMount() {
-    this.setState({ applications: [chonky, rsvp, stock, repo] });
-  }
-
-  handleChange(event) {}
 
   handleSubmit(event) {
     event.preventDefault();
@@ -42,19 +35,14 @@ class App extends React.Component {
           <h1>Roman Emmons</h1>
           <Options className="options" selectPage={this.selectPage} />
         </div>
-        {this.state.page === 'about' ? (
-          <div>
-            <About selectPage={this.selectPage} />
-          </div>
-        ) : null}
-        {this.state.page === 'breakout' ? (
-          <Breakout className="breakout" />
-        ) : null}
-        {this.state.page === 'portfolio' ? (
-          <Portfolio applications={this.state.applications} />
-        ) : null}
-        {this.state.page === 'contact' ? <Contact /> : null}
-        {this.state.page === 'game' ? <Game /> : null}
+        <div>
+          <About selectPage={this.selectPage} />
+        </div>
+        <Headshot />
+
+        <Portfolio />
+        <Breakout className="breakout" />
+        <Contact />
       </div>
     );
   }

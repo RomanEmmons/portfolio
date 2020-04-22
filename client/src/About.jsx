@@ -28,7 +28,6 @@ const About = (props) => {
             Feel free to reach out to me!
           </h3>
         </div>
-        <img className="headShot " src="../images/portfolio.jpg"></img>
       </div>
     </div>
   );
