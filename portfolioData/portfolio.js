@@ -34,7 +34,7 @@ const repo = {
   title: 'Repo Retriever',
   image: repopng,
   description:
-    "This full stack application utilizes the Github API to return information about a specified user's top 25 repos. The repos are sorted by the number of stars they have and are stored in MongoDB for future reference!",
+    "This full stack application utilizes the Github API to return information about a specified user's top 25 repos. The repos are sorted by number of stars and persist in MongoDB.",
   stack: 'React, Node, Express, MongoDB',
   github: 'https://github.com/RomanEmmons/RepoRetriever',
 };
