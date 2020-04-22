@@ -1,6 +1,7 @@
 const chonkygif = require('./ChonkyCat.gif');
 const rsvpgif = require('./RSVP-Up.gif');
 const stockgif = require('./StockTracker.gif');
+const repopng = require('./RepoRetriever.png');
 
 const chonky = {
   title: 'Chonky Cat',
@@ -29,4 +30,12 @@ const stock = {
   github: 'https://github.com/Stock-Tracker',
 };
 
-module.exports = { chonky, rsvp, stock };
+const repo = {
+  title: 'Repo Retriever',
+  image: repopng,
+  description:
+    "This full stack application utilizes the Github API to return information about a specified user's top 25 repos. The repos are sorted by the number of stars they have and are stored in MongoDB for future reference!",
+  stack: 'React, Node, Express, MongoDB',
+  github: 'https://github.com/RomanEmmons/RepoRetriever',
+};
+module.exports = { chonky, rsvp, stock, repo };
