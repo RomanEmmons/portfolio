@@ -35,7 +35,7 @@ const blue = {
   title: 'Blue Daisy Way',
   image: bluegif,
   description:
-    'This is a fully responsive single page application I was hired to create using CSS grid and React.',
+    'This is a fully responsive single page application I was hired to create.  It implements CSS grid layout for a beautiful UX regardless of screen size!',
   stack: 'React, Node, Express, and a whole bunch of vanilla CSS',
   github: 'https://github.com/RomanEmmons/Molly-Souza-Artist-Portfolio',
 };
