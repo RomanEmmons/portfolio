@@ -2,6 +2,7 @@ const chonkygif = require('./ChonkyCat.gif');
 const rsvpgif = require('./RSVP-Up.gif');
 const stockgif = require('./StockTracker.gif');
 const repopng = require('./RepoRetriever.png');
+const bluegif = require('./BlueDaisy.gif');
 
 const chonky = {
   title: 'Chonky Cat',
@@ -30,6 +31,15 @@ const stock = {
   github: 'https://github.com/Stock-Tracker',
 };
 
+const blue = {
+  title: 'Blue Daisy Way',
+  image: bluegif,
+  description:
+    'This is a fully responsive single page application I was hired to create using CSS grid and React.',
+  stack: 'React, Node, Express, and a whole bunch of vanilla CSS',
+  github: 'https://github.com/RomanEmmons/Molly-Souza-Artist-Portfolio',
+};
+
 const repo = {
   title: 'Repo Retriever',
   image: repopng,
@@ -38,4 +48,4 @@ const repo = {
   stack: 'React, Node, Express, MongoDB',
   github: 'https://github.com/RomanEmmons/RepoRetriever',
 };
-module.exports = { chonky, rsvp, stock, repo };
+module.exports = { chonky, rsvp, stock, blue, repo };

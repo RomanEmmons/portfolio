@@ -13,9 +13,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 'breakout',
+      page: 'portfolio',
     };
-    this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.selectPage = this.selectPage.bind(this);
   }
@@ -23,8 +22,6 @@ class App extends React.Component {
   componentDidMount() {
     this.setState({ applications: [chonky, rsvp, stock, repo] });
   }
-
-  handleChange(event) {}
 
   handleSubmit(event) {
     event.preventDefault();
@@ -54,7 +51,6 @@ class App extends React.Component {
           <Portfolio applications={this.state.applications} />
         ) : null}
         {this.state.page === 'contact' ? <Contact /> : null}
-        {this.state.page === 'game' ? <Game /> : null}
       </div>
     );
   }
