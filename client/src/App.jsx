@@ -13,7 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 'portfolio',
+      page: '',
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.selectPage = this.selectPage.bind(this);
@@ -34,11 +34,20 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="banner">
-          <Icons />
-          <h1>Roman Emmons</h1>
-          <Options className="options" selectPage={this.selectPage} />
-        </div>
+        {this.state.page === '' ? (
+          <div>
+            <h1>Welcome</h1>
+            <h2>What would you like to see?</h2>
+            <Options className="options" selectPage={this.selectPage} />
+          </div>
+        ) : (
+          <div className="banner">
+            <Icons />
+            <h1>Roman Emmons</h1>
+            <Options className="options" selectPage={this.selectPage} />
+          </div>
+        )}
+
         {this.state.page === 'about' ? (
           <div>
             <About selectPage={this.selectPage} />
