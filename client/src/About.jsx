@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from './Fade.jsx';
 
 const About = (props) => {
   return (

@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import Options from './Options.jsx';
 import About from './About.jsx';
 import Portfolio from './Portfolio.jsx';
 import Contact from './Contact.jsx';
 import Breakout from './Breakout.jsx';
 import Icons from './Icons.jsx';
-import { chonky, rsvp, stock, repo } from '../../portfolioData/portfolio.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,10 +15,6 @@ class App extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.selectPage = this.selectPage.bind(this);
-  }
-
-  componentDidMount() {
-    this.setState({ applications: [chonky, rsvp, stock, repo] });
   }
 
   handleSubmit(event) {
