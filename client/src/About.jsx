@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from './Fade.jsx';
 
 const About = (props) => {
   return (
@@ -14,9 +15,12 @@ const About = (props) => {
           <h3>
             If you have a project that touches peoples' lives in a positive way,
             I'd like to see how my expertise and your vision can align to make
-            this world a better place.
+            the world a better place.
           </h3>
-          <a href="https://docs.google.com/document/d/1nFQStBEMXM8axnWOH1fD_k7nsr8zGqjFr1zNUMbKLvQ/edit?usp=sharing">
+          <a
+            className="resumeLink"
+            href="https://docs.google.com/document/d/1nFQStBEMXM8axnWOH1fD_k7nsr8zGqjFr1zNUMbKLvQ/edit?usp=sharing"
+          >
             Check out my resume.
           </a>
           <h3

@@ -17,7 +17,7 @@ const rsvp = {
   title: 'RSVP-Up',
   image: rsvpgif,
   description:
-    'This is a MeetUp clone that I created with an AGILE team of 4 other engineers.  I had a lot of fun scaling this app and load testing it with Artillery JS and New Relic.  It implements Redis data caching to benchmark at 10k rps with an average latency of 150ms while querying a database of over 35 million records!',
+    'This is a MeetUp clone that I created with an AGILE team of 3 other engineers.  I had a lot of fun scaling this app and load testing it with Artillery JS and New Relic.  It implements Redis data caching to benchmark at 10k rps with an average latency of 150ms while querying a database of over 35 million records!',
   stack: 'React, Node, Express, MySQL',
   github: 'https://github.com/RSVP-Up',
 };
@@ -35,8 +35,8 @@ const blue = {
   title: 'Blue Daisy Way',
   image: bluegif,
   description:
-    'This is a fully responsive single page application I was hired to create.  It implements CSS grid layout for a beautiful UX regardless of screen size!',
-  stack: 'React, Node, Express, and a whole bunch of vanilla CSS',
+    'This is a fully responsive single page artist portfolio that implements CSS grid layout for a beautiful UX regardless of screen size!',
+  stack: 'React, Node, Express, and vanilla CSS',
   github: 'https://github.com/RomanEmmons/Molly-Souza-Artist-Portfolio',
 };
 
@@ -44,7 +44,7 @@ const repo = {
   title: 'Repo Retriever',
   image: repopng,
   description:
-    "This full stack application utilizes the Github API to return information about a specified user's top 25 repos. The repos are sorted by number of stars and persist in MongoDB.",
+    "This full stack application utilizes the Github API to return information about a specified user's top 25 repos.  The repos are sorted by number of stars and persist in MongoDB.",
   stack: 'React, Node, Express, MongoDB',
   github: 'https://github.com/RomanEmmons/RepoRetriever',
 };

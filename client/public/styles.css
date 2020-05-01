@@ -205,6 +205,16 @@ textarea {
   margin: 5% 11% 11% 11%;
 }
 
+.resumeLink {
+  text-align: left;
+  color: purple;
+  font-family: 'stellar';
+  font-size: 1.5vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+
 .headShot {
   float: right;
   height: 25vw;
