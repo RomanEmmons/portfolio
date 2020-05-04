@@ -4,16 +4,16 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const creds = require('../config');
+const PASS = process.env.PASS;
+const USER = process.env.USER;
 
 const port = 3000;
-
 const transport = {
   host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
   port: 587,
   auth: {
-    user: creds.USER,
-    pass: creds.PASS,
+    user: USER,
+    pass: PASS,
   },
 };
 
@@ -28,7 +28,7 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
-  console.log('req.body', req.body);
+  // console.log('req.body', req.body);
   var name = req.body.name;
   var email = req.body.email;
   var message = req.body.message;
