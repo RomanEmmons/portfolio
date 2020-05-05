@@ -6,6 +6,7 @@ import Portfolio from './Portfolio.jsx';
 import Contact from './Contact.jsx';
 import Breakout from './Breakout.jsx';
 import Icons from './Icons.jsx';
+import IconsMobile from './IconsMobile.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,15 +30,15 @@ class App extends React.Component {
     return (
       <div>
         {this.state.page === '' ? (
-          <div>
-            <h1>Welcome</h1>
-            <h2>What would you like to see?</h2>
-            <Options className="options" selectPage={this.selectPage} />
+          <div className="welcomeDiv">
+            <h1 className="welcome">Welcome</h1>
+            <h2 className="welcome2">What would you like to see?</h2>
+            <Options className="options2" selectPage={this.selectPage} />
           </div>
         ) : (
           <div className="banner">
             <Icons />
-            <h1>Roman Emmons</h1>
+            <h1 id="roman">Roman Emmons</h1>
             <Options className="options" selectPage={this.selectPage} />
           </div>
         )}
@@ -54,6 +55,7 @@ class App extends React.Component {
           <Portfolio applications={this.state.applications} />
         ) : null}
         {this.state.page === 'contact' ? <Contact /> : null}
+        <IconsMobile />
       </div>
     );
   }

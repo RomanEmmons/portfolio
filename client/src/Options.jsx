@@ -5,17 +5,31 @@ const Options = (props) => {
   return (
     <div className="btn-container">
       {pages.map((page, i) => {
-        return (
-          <button
-            onClick={() => {
-              props.selectPage(page);
-            }}
-            className="btn btn-animations"
-            key={i}
-          >
-            {page}
-          </button>
-        );
+        if (page === 'breakout') {
+          return (
+            <button
+              onClick={() => {
+                props.selectPage(page);
+              }}
+              className="btn btn-animations hide"
+              key={i}
+            >
+              {page}
+            </button>
+          );
+        } else {
+          return (
+            <button
+              onClick={() => {
+                props.selectPage(page);
+              }}
+              className="btn btn-animations"
+              key={i}
+            >
+              {page}
+            </button>
+          );
+        }
       })}
     </div>
   );

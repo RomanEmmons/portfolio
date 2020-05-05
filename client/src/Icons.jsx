@@ -2,7 +2,7 @@ import React from 'react';
 
 const Icons = () => {
   return (
-    <div className="icon-container">
+    <div className="icon-container hide">
       <a href="https://github.com/RomanEmmons" className="icons2">
         Z
       </a>
