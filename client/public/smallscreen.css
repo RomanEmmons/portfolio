@@ -27,6 +27,7 @@
 body {
   background-color: black;
   font: 'ultra', 'ariel', 'roboto';
+  background: url('./still.jpg');
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,10 +38,23 @@ body {
 #background {
   position: fixed;
   z-index: -1;
+  visibility: hidden;
 }
 
-.hideFullSize {
+.hide {
   visibility: hidden;
+}
+
+.welcomeDiv {
+  text-align: center;
+}
+
+.welcome {
+  font-size: 15.5vw;
+}
+
+.welcome2 {
+  font-size: 10vw;
 }
 
 /* BREAKOUT */
@@ -55,9 +69,22 @@ canvas {
 
 /* OPTIONS */
 .btn-container {
-  display: inline-flex;
-  margin-left: 28%;
-  margin-top: -10%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 15%;
+}
+
+button {
+  justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  display: block;
+  width: 60%;
+  height: 10vw;
+
+  margin: 0 auto;
 }
 
 .btn {
@@ -66,13 +93,12 @@ canvas {
   border: 2px solid black;
   border-radius: 4vw;
   color: purple;
-  font-size: 1.5vw;
+  font-size: 7vw;
   font-weight: 400;
-  margin: 3%;
+  margin: 4%;
   padding: 0 0 0 1%;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
   font-family: 'ultra', sans-serif;
   font-weight: 700;
 }
@@ -120,6 +146,13 @@ canvas {
   }
 }
 
+#roman {
+  font-size: 10.5vw;
+  margin-left: -2.5%;
+  margin-right: -8.5%;
+  margin-top: -65%;
+}
+
 /* DISPLAY */
 .display {
   justify-content: center;
@@ -128,16 +161,97 @@ canvas {
   margin-right: auto;
 }
 
-/* DESCRIPTION */
+/* ABOUT */
+
 .aboutDescription {
   font-family: 'stellar', Arial, Helvetica;
   display: block;
-  float: left;
-  width: 60%;
+  width: 95%;
   height: auto;
-  margin-top: 1.5%;
-  margin-left: 5%;
-  margin-bottom: 1.5%;
+  margin: 0 5%;
+}
+
+.contactLink {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'stellar';
+}
+
+.about {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+  background: black;
+  color: purple;
+  height: auto;
+  padding-top: 2vw;
+  width: 100%;
+  font-family: 'stellar';
+}
+
+.resumeLink {
+  text-align: left;
+  color: purple;
+  font-family: 'stellar';
+  font-size: 7vw;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  margin: 2%;
+}
+
+.headShot {
+  margin-top: 3vw;
+  margin-left: 0.5vw;
+  height: 90vw;
+  width: 94vw;
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+
+/* ICONS */
+.icon-container {
+  display: inline;
+  text-align: center;
+  color: purple;
+  margin: 100% 10% 10% 25%;
+}
+
+.icons1 {
+  font-family: 'media1';
+  margin-top: 5%;
+  margin-right: 3%;
+  font-size: 10vw;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+.icons2 {
+  font-family: 'media2';
+  margin-right: 3%;
+
+  font-size: 10vw;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
+}
+
+/* BANNER */
+.banner {
+  z-index: -0.05;
+  display: block;
+  margin-bottom: -5%;
+}
+
+.options {
+  margin-top: 5%;
 }
 
 /* CONTACT */
@@ -184,7 +298,6 @@ textarea {
   transition: all 0.3s;
   margin-top: 1%;
   margin-left: 2%;
-
   font-weight: 700;
 }
 [type='submit']:hover {
@@ -196,110 +309,38 @@ textarea {
   color: purple;
 }
 
-/* ABOUT */
-
-.contactLink {
-  text-decoration: underline;
-  cursor: pointer;
-  font-family: 'stellar';
-}
-
-.about {
-  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
-  background: black;
-  display: inline-block;
-  color: purple;
-  height: auto;
-  width: 80%;
-  font-family: 'stellar';
-  margin: 5% 11% 11% 11%;
-}
-
-.resumeLink {
-  text-align: left;
-  color: purple;
-  font-family: 'stellar';
-  font-size: 1.5vw;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-}
-
-.headShot {
-  float: right;
-  height: 25vw;
-  width: 25vw;
-  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
-}
-
-/* ICONS */
-.icon-container {
-  text-align: center;
-  float: left;
-  color: purple;
-  position: fixed;
-  margin: 4.25% 0 0 1%;
-}
-
-.icons1 {
-  font-family: 'media1';
-  font-size: 3vw;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-.icons2 {
-  font-family: 'media2';
-  font-size: 3vw;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-/* BANNER */
-.banner {
-  background-color: black;
-  margin-top: -4%;
-  padding-bottom: 2%;
-  z-index: -0.05;
-}
-
-.options {
-  margin-top: 5%;
-}
-
 /* TEXT */
 h1 {
   color: purple;
   font-family: 'ultra';
-  font-size: 6vw;
+  font-size: 10vw;
   text-align: center;
   font-weight: 700;
   margin-top: 0.5%;
-  margin-left: 7%;
-  margin-bottom: 1.5%;
+  margin-left: 6%;
   padding-top: 3%;
 }
 
 h2 {
   color: purple;
   text-align: center;
-  font-size: 3vw;
+  font-size: 11vw;
   font-family: 'ultra';
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
+  margin-left: 6.5%;
+  margin-top: 14%;
 }
 
 h3 {
-  text-align: left;
   color: purple;
   font-family: 'stellar';
-  font-size: 1.5vw;
+  font-size: 7vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+  font-weight: 500;
+  margin: 2% 2% 4% 2%;
 }
 
 h4 {
@@ -316,15 +357,16 @@ h4 {
 p {
   color: purple;
   font-family: 'stellar';
-  font-size: 1.5vw;
+  font-size: 7vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 100;
 }
+
 a {
   color: purple;
   font-family: 'stellar';
-  font-size: 1.5vw;
+  font-size: 4vw;
   font-style: normal;
   font-variant: normal;
   font-weight: 100;
@@ -338,7 +380,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   height: auto;
-  width: 85%;
+  width: 100%;
 }
 
 .portfolio {
@@ -346,13 +388,14 @@ a {
 }
 
 .innerPort {
-  display: inline-flex;
+  display: block;
+  height: 100%;
 }
 
 .portOuter {
   /* box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple; */
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .titleImage {
@@ -360,21 +403,23 @@ a {
   box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
   margin: 3% 2% 2% 1.5%;
   height: auto;
-  width: auto;
+  width: 100%;
 }
 
 .facts {
   font-family: 'stellar', Arial, Helvetica;
+  justify-content: center;
   display: block;
   text-align: left;
-  margin: -2% 2.5% 0 1%;
-  width: 38%;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 15%;
 }
 
 .portfolioImage {
-  width: 50%;
+  width: 100%;
   height: auto;
-  margin: 0 2.5% 3% 4%;
+  margin-top: 8%;
 }
 
 /********************************************
@@ -393,7 +438,7 @@ a {
   -ms-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
-  opacity: 0.4;
+  opacity: 1;
   filter: alpha(opacity=40);
   position: absolute;
   z-index: 2;
@@ -459,7 +504,7 @@ a {
   top: 50%;
   margin-top: -13px;
   font-size: 18px;
-  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+  /* box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple; */
 }
 .carousel .thumbs-wrapper {
   margin: 20px;
@@ -616,7 +661,7 @@ a {
 .carousel .control-dots {
   position: absolute;
   bottom: 0;
-  margin: 10px 0;
+  margin: 5% 0 2% -4%;
   text-align: center;
   width: 100%;
 }
