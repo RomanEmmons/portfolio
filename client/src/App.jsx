@@ -55,6 +55,7 @@ class App extends React.Component {
           <Portfolio applications={this.state.applications} />
         ) : null}
         {this.state.page === 'contact' ? <Contact /> : null}
+
         <IconsMobile />
       </div>
     );
