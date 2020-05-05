@@ -51,6 +51,8 @@ body {
 
 .welcome {
   font-size: 15.5vw;
+  margin-left: 8%;
+  margin-top: 10%;
 }
 
 .welcome2 {
@@ -153,6 +155,13 @@ button {
   margin-top: -65%;
 }
 
+#romanWelcome {
+  font-size: 10.5vw;
+  margin-left: -2.5%;
+  margin-right: -8.5%;
+  margin-top: -3%;
+}
+
 /* DISPLAY */
 .display {
   justify-content: center;
@@ -210,17 +219,20 @@ button {
 }
 
 /* ICONS */
+.iconsOuter {
+  margin-top: 15%;
+}
+
 .icon-container {
   display: inline;
   text-align: center;
   color: purple;
-  margin: 100% 10% 10% 25%;
+  text-align: center;
 }
 
 .icons1 {
   font-family: 'media1';
-  margin-top: 5%;
-  margin-right: 3%;
+  margin-right: 11%;
   font-size: 10vw;
   cursor: pointer;
   text-decoration: none;
@@ -232,8 +244,7 @@ button {
 
 .icons2 {
   font-family: 'media2';
-  margin-right: 3%;
-
+  margin-right: 11%;
   font-size: 10vw;
   cursor: pointer;
   text-decoration: none;
@@ -243,10 +254,15 @@ button {
     0.05em 0.05em black;
 }
 
+.lastIcon {
+  margin-right: 0;
+}
+
 /* BANNER */
 .banner {
   z-index: -0.05;
   display: block;
+  text-align: center;
   margin-bottom: -5%;
 }
 
@@ -256,8 +272,8 @@ button {
 
 /* CONTACT */
 form {
-  max-width: 50%;
-  margin: 0.5% auto auto auto;
+  max-width: 95%;
+  height: 80%;
 }
 
 .feedback-input {
@@ -265,9 +281,9 @@ form {
   box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
   font-family: 'stellar', Arial, sans-serif;
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 7vw;
   border-radius: 5px;
-  line-height: 3vw;
+  line-height: 6vw;
   background-color: black;
   border: 2px solid purple;
   transition: all 0.3s;
@@ -279,9 +295,15 @@ form {
 }
 
 textarea {
-  height: 150%;
+  height: 200%;
   line-height: 150%;
   resize: vertical;
+}
+
+.btn {
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black,
+    -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black,
+    0.05em 0.05em black;
 }
 
 [type='submit'] {
@@ -292,7 +314,7 @@ textarea {
   border: 0;
   cursor: pointer;
   color: purple;
-  font-size: 1.75vw;
+  font-size: 5vw;
   padding-top: 1%;
   padding-bottom: 1%;
   transition: all 0.3s;

@@ -170,6 +170,12 @@ textarea {
   resize: vertical;
 }
 
+.btn {
+  text-shadow: 0.025em 0 black, 0 0.025em black, -0.025em 0 black,
+    0 -0.025em black, -0.025em -0.025em black, -0.025em 0.025em black,
+    0.025em -0.025em black, 0.025em 0.025em black;
+}
+
 [type='submit'] {
   font-family: 'stellar', Arial, Helvetica;
   width: 100%;
@@ -258,6 +264,7 @@ textarea {
 }
 
 /* BANNER */
+
 .banner {
   background-color: black;
   margin-top: -4%;
