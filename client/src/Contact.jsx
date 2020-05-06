@@ -80,7 +80,11 @@ class Contact extends React.Component {
               onChange={this.onMessageChange.bind(this)}
             />
           </div>
-          <button type="submit" className="btn btn-animations">
+          <button
+            type="submit"
+            onClick={this.handleSubmit.bind(this)}
+            className="btn btn-animations"
+          >
             Submit
           </button>
         </form>

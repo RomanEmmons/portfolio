@@ -170,11 +170,11 @@ textarea {
   resize: vertical;
 }
 
-.btn {
+/* .btn {
   text-shadow: 0.025em 0 black, 0 0.025em black, -0.025em 0 black,
     0 -0.025em black, -0.025em -0.025em black, -0.025em 0.025em black,
     0.025em -0.025em black, 0.025em 0.025em black;
-}
+} */
 
 [type='submit'] {
   font-family: 'stellar', Arial, Helvetica;
@@ -326,7 +326,7 @@ p {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 100;
+  font-weight: 500;
 }
 a {
   color: purple;
@@ -334,7 +334,7 @@ a {
   font-size: 1.5vw;
   font-style: normal;
   font-variant: normal;
-  font-weight: 100;
+  font-weight: 500;
   margin: auto;
 }
 
