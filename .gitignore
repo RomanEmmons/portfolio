@@ -1,4 +1,3 @@
 node_modules
-bundle.js
-config.js
+client/public/bundle.js
 app-env
