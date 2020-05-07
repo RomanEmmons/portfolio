@@ -1,8 +1,8 @@
-const chonkygif = require('./ChonkyCat.gif');
-const rsvpgif = require('./RSVP-Up.gif');
-const stockgif = require('./StockTracker.gif');
-const repopng = require('./RepoRetriever.png');
-const bluegif = require('./BlueDaisy.gif');
+const chonkygif = require('../client/public/17326b5521ba5f29a16109cbaafc011a.gif');
+const rsvpgif = require('../client/public/11cb9ba17c1ae4b783ae3856217d7c16.gif');
+const stockgif = require('../client/public/f34e8a88cef17e7317fe983470f68482.gif');
+const repopng = require('../client/public/b271cd856cb073dd1cda573d915e2a4d.png');
+const bluegif = require('../client/public/a5a93d27b922c9ef8f150b83fa5dc84f.gif');
 
 const chonky = {
   title: 'Chonky Cat',

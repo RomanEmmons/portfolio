@@ -13,7 +13,7 @@ const About = (props) => {
         <h3>
           If you have a project that touches peoples' lives in a positive way,
           I'd like to see how my expertise and your vision can align to make the
-          world a better place.
+          internet a better place.
         </h3>
         <a
           className="resumeLink"

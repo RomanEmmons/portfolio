@@ -4,17 +4,17 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const config = require('../config.js');
-// const PASS = process.env.PASS;
-// const USER = process.env.USER;
+//const config = require('../config.js')
+const PASS = process.env.PASS;
+const USER = process.env.USERGMAIL;
 
 const port = 3000;
 const transport = {
   host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
   port: 587,
   auth: {
-    user: config.USER,
-    pass: config.PASS,
+    user: USER,
+    pass: PASS,
   },
 };
 
